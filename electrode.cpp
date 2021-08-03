@@ -187,7 +187,7 @@ void Electrode::AddCustomElectrode(Molecule& elecMole, Molecule& juncMole, Molec
   for(int i=0; i<elecMole.GetAtomCount(); i++)
   {
     juncMole.AddAtom(elecMole.GetAtomSym(i),-elecMole.GetAtomCoord(i,'x') - BL, elecMole.GetAtomCoord(i,'y'),elecMole.GetAtomCoord(i,'z'));
-    juncMole.AddAtom(elecMole2.GetAtomSym(i),elecMole2.GetAtomCoord(i,'x') + juncMole.GetAtomCoord(junc2, 'x') + BL, elecMole.GetAtomCoord(i,'y'), elecMole.GetAtomCoord(i,'z'));
+    juncMole.AddAtom(elecMole2.GetAtomSym(i),elecMole2.GetAtomCoord(i,'x') + juncMole.GetAtomCoord(junc2, 'x') + BL, elecMole2.GetAtomCoord(i,'y'), elecMole2.GetAtomCoord(i,'z'));
   }
 } 
    
